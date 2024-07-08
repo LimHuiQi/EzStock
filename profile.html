@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth group" data-sidebar="brand" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>IMS - EzStock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta content="Inventory Management System for Small Businesses" name="description" />
+    <meta content="" name="EzStock" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/EzStock.png" />
+
+    <!-- Css -->
+    <!-- Main Css -->
+    <link href="assets/css/flatpickr.min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/datepicker.css">
+    <link rel="stylesheet" href="assets/css/selectr.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/5e1b21a2a2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body data-layout-mode="light" data-sidebar-size="default" data-theme-layout="vertical"
+    class="bg-[#EEF0FC] dark:bg-gray-900">
+
+   <!-- leftbar-tab-menu -->
+   <div
+   class="min-h-full z-[99]  fixed inset-y-0 print:hidden bg-gradient-to-t from-[#6f3dc3] from-10% via-[#603dc3] via-40% to-[#5c3dc3] to-100% dark:bg-[#603dc3] main-sidebar duration-300 group-data-[sidebar=dark]:bg-[#603dc3] group-data-[sidebar=brand]:bg-brand group-[.dark]:group-data-[sidebar=brand]:bg-[#603dc3]">
+   <div
+       class=" text-center border-b bg-[#603dc3] border-r h-[64px] flex justify-center items-center brand-logo dark:bg-[#603dc3] dark:border-slate-700/40 group-data-[sidebar=dark]:bg-[#603dc3] group-data-[sidebar=dark]:border-slate-700/40 group-data-[sidebar=brand]:bg-brand group-[.dark]:group-data-[sidebar=brand]:bg-[#603dc3] group-data-[sidebar=brand]:border-slate-700/40">
+       <a href="index.html" class="logo">
+           <span>
+               <img src="assets/images/EzStock.png" alt="logo-small" class="logo-sm h-8 align-middle inline-block">
+           </span>
+           <span>
+               <img src="assets/images/logo.png" alt="logo-large"
+                   class="logo-lg h-[28px] logo-light hidden dark:inline-block ms-1 group-data-[sidebar=dark]:inline-block group-data-[sidebar=brand]:inline-block">
+               <img src="assets/images/EzStock.png" alt="logo-large"
+                   class="logo-lg h-[28px] logo-dark inline-block dark:hidden ms-1 group-data-[sidebar=dark]:hidden group-data-[sidebar=brand]:hidden">
+           </span>
+       </a>
+   </div>
+   <div class="border-r pb-14 h-[100vh] dark:bg-[#603dc3] dark:border-slate-700/40 group-data-[sidebar=dark]:border-slate-700/40 group-data-[sidebar=brand]:border-slate-700/40"
+       data-simplebar>
+       <div class="p-4 block">
+           <ul class="navbar-nav">
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Main</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="index.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-border-all"></i>
+                           </span>
+                           <span>Dashboard</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Products</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="product.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-box"></i>
+                           </span>
+                           <span>Product List</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="addProduct.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-square-plus"></i>
+                           </span>
+                           <span>Create Product</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="category.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-list"></i>
+                           </span>
+                           <span>Category</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="brands.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-tag"></i>
+                           </span>
+                           <span>Brands</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Sales</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="salesList.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-cart-shopping"></i>
+                           </span>
+                           <span>Sales List</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="addSales.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-cart-plus"></i>
+                           </span>
+                           <span>Create Sales</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Purchases</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="purchaseList.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-basket-shopping"></i>
+                           </span>
+                           <span>Purchase List</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="addPurchase.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-wallet"></i>
+                           </span>
+                           <span>Create Purchase</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">People</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="customer.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-user-tag"></i>
+                           </span>
+                           <span>Customer</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="supplier.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-users"></i>
+                           </span>
+                           <span>Supplier</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Report</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="salesReport.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-chart-line"></i>
+                           </span>
+                           <span>Sales Report</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="purchaseReport.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-chart-gantt"></i>
+                           </span>
+                           <span>Purchase Report</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="invoiceReport.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-chart-column"></i>
+                           </span>
+                           <span>Invioce Report</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="customerReport.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-chart-bar"></i>
+                           </span>
+                           <span>Customer Report</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="supplierReport.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-chart-area"></i>
+                           </span>
+                           <span>Supplier Report</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Settings</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="profile.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-user-gear"></i>
+                           </span>
+                           <span>Profile</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="javascript:void(0);"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           onclick="confirmLogout()" data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-right-from-bracket"></i>
+                           </span>
+                           <span>Logout</span>
+                       </a>
+                   </div>
+               </li>
+
+
+
+           </ul>
+
+       </div>
+   </div>
+</div> <!-- End leftbar-tab-menu -->
+
+<!-- Topbar -->
+<nav id="topbar" class="topbar border-b  dark:border-slate-700/40  fixed inset-x-0  duration-300
+block print:hidden z-50">
+   <div
+       class="mx-0 flex max-w-full flex-wrap items-center lg:mx-auto relative top-[50%] start-[50%] transform -translate-x-1/2 -translate-y-1/2">
+       <div class="ltr:mx-2  rtl:mx-2">
+           <button id="toggle-menu-hide" class="button-menu-mobile flex rounded-full md:me-0 relative">
+               <i class="fa-solid fa-bars top-icon w-5 h-5"></i>
+           </button>
+       </div>
+       <div class="flex items-center md:w-[40%] lg:w-[30%] xl:w-[20%]">
+           <div class="relative ltr:mx-2 rtl:mx-2 self-center">
+               <button
+                   class="px-2 py-1 bg-primary-500/10 border border-transparent collapse:bg-green-100 text-primary text-sm rounded hover:bg-blue-600 hover:text-white"><i
+                       class="ti ti-plus me-1"></i> New Task</button>
+           </div>
+       </div>
+
+       <div class="order-1 ltr:ms-auto rtl:ms-0 rtl:me-auto flex items-center md:order-2">
+           <div class="ltr:me-2 ltr:md:me-4 rtl:me-0 rtl:ms-2 rtl:lg:me-0 rtl:md:ms-4 dropdown relative">
+               <button type="button" class="dropdown-toggle flex rounded-full md:me-0" aria-expanded="false"
+                   data-fc-autoclose="both" data-fc-type="dropdown">
+                   <span class="top-icon w-5 h-5">
+                       <i class="fa-solid fa-magnifying-glass"></i>
+                   </span>
+               </button>
+
+               <div class="left-auto right-0 z-50 my-1 hidden min-w-[300px]
+  list-none divide-y  divide-gray-100 rounded-md border-slate-700
+  md:border-white text-base shadow dark:divide-gray-600 bg-white
+  dark:bg-slate-800" onclick="event.stopPropagation()">
+                   <div class="relative">
+                       <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center
+      pl-3">
+                           <i class="fa-solid fa-search text-gray-400 dark:text-gray-400 z-10"></i>
+                       </div>
+                       <input type="text" id="email-adress-icon" class="block w-full rounded-lg border border-slate-200 dark:border-slate-700/60 bg-slate-200/10 p-1.5
+      pl-10 text-slate-600 dark:text-slate-400 outline-none focus:border-slate-300
+      focus:ring-slate-300 dark:bg-slate-800/20 sm:text-sm" placeholder="Search..." />
+                   </div>
+               </div>
+           </div>
+           <div class="ltr:me-2 ltr:md:me-4 rtl:me-0 rtl:ms-2 rtl:lg:me-0 rtl:md:ms-4">
+
+               <button id="toggle-theme" class="flex rounded-full md:me-0 relative">
+                   <span class="top-icon w-5 h-5 light ">
+                       <i class="fa-solid fa-moon"></i>
+                   </span>
+                   <span class="top-icon w-5 h-5 dark hidden">
+                       <i class="fa-solid fa-sun"></i>
+                   </span>
+               </button>
+           </div>
+           <div class="ltr:me-2 ltr:lg:me-4 rtl:me-0 rtl:ms-2 rtl:lg:me-0 rtl:md:ms-4 dropdown relative">
+               <button type="button" class="dropdown-toggle flex rounded-full md:me-0" id="Notifications"
+                   aria-expanded="false" data-fc-autoclose="both" data-fc-type="dropdown">
+                   <span class="top-icon w-5 h-5">
+                       <i class="fa-solid fa-bell"></i>
+                   </span>
+               </button>
+
+               <div class="left-auto right-0 z-50 my-1 hidden w-64
+  list-none divide-y h-52 divide-gray-100 rounded border border-slate-700/10
+ text-base shadow dark:divide-gray-600 bg-white
+  dark:bg-slate-800" id="navNotifications" data-simplebar>
+                   <ul class="py-1" aria-labelledby="navNotifications">
+                       <!-- Notifications -->
+                   </ul>
+               </div>
+           </div>
+           <div class="me-2  dropdown relative">
+               <button type="button"
+                   class="dropdown-toggle flex items-center rounded-full text-sm focus:bg-none focus:ring-0 dark:focus:ring-0 md:me-0"
+                   id="user-profile" aria-expanded="false" data-fc-autoclose="both" data-fc-type="dropdown">
+                   <img id="userImage" class="h-8 w-8 rounded-full" alt="user photo" />    
+                   <span class="ltr:ms-2 rtl:ms-0 rtl:me-2 hidden text-left xl:block">
+                       <div class="user-info">
+                           <span id="username" class="block font-medium text-slate-600 dark:text-gray-300"></span>
+                       </div>
+                       <span class="-mt-0.5 block text-xs text-slate-500 dark:text-gray-400">Admin</span>
+                   </span>
+               </button>
+
+
+               <div class="left-auto right-0 z-50 my-1 hidden list-none
+  divide-y divide-gray-100 rounded border border-slate-700/10
+  text-base shadow dark:divide-gray-600 bg-white dark:bg-slate-800 w-40" id="navUserdata">
+
+                   <ul class="py-1" aria-labelledby="navUserdata">
+                       <li>
+                           <a href="profile.html" class="flex items-center py-2 px-3 text-sm text-gray-700 hover:bg-gray-50
+        dark:text-gray-200 dark:hover:bg-gray-900/20
+        dark:hover:text-white">
+                               <span class="w-4 h-5 inline-block text-slate-800 dark:text-slate-400 me-2">
+                                   <i class="fa-solid fa-circle-user"></i>
+                               </span>
+                               Profile</a>
+                       </li>
+                       <li>
+                           <a href="settings.html" class="flex items-center py-2 px-3 text-sm text-gray-700 hover:bg-gray-50
+        dark:text-gray-200 dark:hover:bg-gray-900/20
+        dark:hover:text-white">
+                               <span class="w-4 h-5 inline-block text-slate-800 dark:text-slate-400 me-2">
+                                   <i class="fa-solid fa-gear"></i>
+                               </span>
+                               Settings</a>
+                       </li>
+                       <li>
+                           <a href="#" class="flex items-center py-2 px-3 text-sm text-gray-700 hover:bg-gray-50
+        dark:text-gray-200 dark:hover:bg-gray-900/20
+        dark:hover:text-white">
+                               <span class="w-4 h-5 inline-block text-slate-800 dark:text-slate-400 me-2">
+                                   <i class="fa-solid fa-dollar-sign"></i>
+                               </span>
+                               Earnings</a>
+                       </li>
+                       <li>
+                           <a href="login.html" class="flex items-center py-2 px-3 text-sm text-red-500 hover:bg-gray-50 hover:text-red-600
+        dark:text-red-500 dark:hover:bg-gray-900/20
+        dark:hover:text-red-500">
+                               <span class="w-4 h-5 inline-block text-red-500 dark:text-red-500 me-2">
+                                   <i class="fa-solid fa-right-from-bracket"></i>
+                               </span>
+                               Sign out</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+</nav><!--End Topbar -->
+
+        
+        <div class="ltr:flex flex-1 rtl:flex-row-reverse">
+            <div class="page-wrapper relative ltr:ml-auto rtl:mr-auto rtl:ml-0 w-[calc(100%-260px)] px-4 pt-[64px] duration-300">
+                <div class="xl:w-full">        
+                    <div class="flex flex-wrap">
+                        <div class="flex items-center py-4 w-full">
+                            <div class="w-full">                    
+                                <div class="flex flex-wrap justify-between">
+                                    <div class="items-center ">
+                                        <h1 class="font-medium text-3xl block dark:text-slate-100">Profile</h1>
+                                        <ol class="list-reset flex text-sm">
+                                            <li><a href="#" class="text-gray-500 dark:text-slate-400">IMS</a></li>
+                                            <li><span class="text-gray-500 dark:text-slate-400 mx-2">/</span></li>
+                                            <li class="text-gray-500 dark:text-slate-400">EzStock</li>
+                                            <li><span class="text-gray-500 dark:text-slate-400 mx-2">/</span></li>
+                                            <li class="text-primary-500 hover:text-primary-600 dark:text-primary-400">Profile</li>
+                                        </ol>
+                                    </div><!--end /div-->
+                                    <div class="flex items-center">
+                                        <div class="today-date leading-5 mt-2 lg:mt-0 form-input w-auto rounded-md border inline-block border-primary-500/60 dark:border-primary-500/60 text-primary-500 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-primary-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700">
+                                            <input type="text" class="dash_date border-0 focus:border-0 focus:outline-none" readonly  required="">
+                                        </div>
+                                    </div><!--end /div-->
+                                </div><!--end /div-->
+                            </div><!--end /div-->
+                        </div><!--end /div-->
+                    </div><!--end /div-->
+                </div><!--end container-->
+            
+                <div class="xl:w-full  min-h-[calc(100vh-152px)] relative pb-14"> 
+                    <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 mb-4">                        
+                        <div class="sm:col-span-12  md:col-span-12 lg:col-span-12 xl:col-span-12 ">
+                            <div class="bg-white dark:bg-slate-800 shadow  rounded-md w-full relative">
+                                <div class="flex-auto p-0">
+                                    <img src="uploads/background/profile-bg.jpg" alt="" class="bg-cover bg-center h-48 w-fit rounded-md clip-path-bottom">
+                                </div><!--end card-body-->
+                                <div class="flex-auto p-4 pt-0">
+                                    <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">                        
+                                        <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 ">
+                                            <div class="flex items-center relative -mt-[74px]">
+                                                <div class="w-36 h-36 relative">
+                                                    <img src="uploads/users/User.png" alt="" class="rounded-full border-[8px] border-white dark:border-slate-800">
+                                                    <span class="absolute cursor-pointer w-7 h-7 bg-green-600 rounded-full bottom-4 right-3 flex items-center justify-center border-2 border-white dark:border-slate-800">
+                                                        <i class="fas fa-camera text-white text-xs"></i>
+                                                    </span>
+                                                </div>                                        
+                                                <div class="self-end ml-3">
+                                                    <h5 id="userName" class="text-xl md:text-[28px] font-semibold sm:text-white md:text-slate-700 dark:text-gray-300 mb-0 md:mb-2"></h5>
+                                                    <p class="block text-xs lg:text-base  font-medium text-slate-500">Admin</p>
+                                                </div>
+                                            </div>
+                                        </div><!--end col--> 
+                                        <div class="sm:col-span-12  md:col-span-12 lg:col-span-6 xl:col-span-6 self-center flex mt-5">
+                                            <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12">                        
+                                                <div class="col-span-6  md:col-span-3 lg:col-span-3 xl:col-span-3 ">
+                                                    <div class="border-2 border-slate-200/50 dark:border-slate-600/60 inline-flex rounded-full cursor-pointer">
+                                                        <img src="assets/images/fb_logo.png" alt="" class="rounded-full h-9 w-9">
+                                                        <span class="self-center px-2 font-medium dark:text-slate-400">Facebook</span>
+                                                    </div>
+                                                </div><!--end col-->
+                                                <div class="col-span-6  md:col-span-3 lg:col-span-3 xl:col-span-3 ">
+                                                    <div class="border-2 border-slate-200/50 dark:border-slate-600/60 inline-flex rounded-full cursor-pointer ml-0 md:ml-1">
+                                                        <img src="assets/images/ig_logo.png" alt="" class="rounded-full h-9 w-9">
+                                                        <span class="self-center px-2 font-medium dark:text-slate-400">instagram</span>
+                                                    </div>
+                                                </div><!--end col--> 
+                                                <div class="col-span-6  md:col-span-3 lg:col-span-3 xl:col-span-3 ">
+                                                    <div class="border-2 border-slate-200/50 dark:border-slate-600/60 inline-flex rounded-full cursor-pointer ml-0 md:ml-1">
+                                                        <img src="assets/images/twitter_logo.png" alt="" class="rounded-full h-9 w-9">
+                                                        <span class="self-center px-2 font-medium dark:text-slate-400">Twitter</span>
+                                                    </div>
+                                                </div><!--end col--> 
+                                                <div class="col-span-6 md:col-span-3 lg:col-span-3 xl:col-span-3">
+                                                    <a href="settings.html" class="px-3 py-2 lg:px-6 bg-blue-500 collapse:bg-green-100 text-white text-sm font-semibold rounded-full hover:bg-blue-600 ml-0 md:ml-1 inline-block text-center">
+                                                        Settings
+                                                    </a>
+                                                </div><!--end col-->  
+                                            </div><!--end inner-grid--> 
+                                        </div><!--end col-->              
+                                    </div><!--end inner-grid--> 
+                                </div><!--end card-body-->
+                            </div> <!--end card-->
+                        </div><!--end col-->            
+                    </div><!--end inner-grid--> 
+                    
+                    <div class="grid md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4 ">
+                        <div class="sm:col-span-12  md:col-span-12 lg:col-span-12 xl:col-span-12 ">
+                            <div class="w-full relative overflow-hidden">                   
+                                <div class="p-0 xl:p-4">                        
+                                    <div class="mb-4 border-b border-dashed border-gray-200 dark:border-gray-700 flex flex-wrap justify-start lg:justify-between" data-fc-type="tab">                            
+                                        <ul class="flex flex-wrap mb-5 lg:-mb-px" aria-label="Tabs">
+                                            
+                                            <li role="presentation">
+                                                <button class="inline-block py-4 px-4 text-sm font-medium text-center text-gray-500 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:text-gray-400 dark:hover:text-gray-300 border-gray-100 dark:border-gray-700" id="Settings-tab" data-fc-target="#Settings" type="button" role="tab" aria-controls="Settings" aria-selected="false">Settings</button>
+                                            </li>
+                                        </ul>                         
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col--> 
+                    </div>  
+
+                    <!-- footer -->
+                    <div class="absolute bottom-0 -left-4 -right-4 block print:hidden border-t p-4 h-[52px] dark:border-slate-700/40">
+                        <div class="container">
+                          <!-- Footer Start -->
+                          <footer
+                            class="footer bg-transparent  text-center  font-medium text-slate-600 dark:text-slate-400 md:text-left "
+                          >
+                            &copy;
+                            <script>
+                              var year = new Date();document.write(year.getFullYear());
+                            </script>
+                            EzStock
+                            <span class="float-right hidden text-slate-600 dark:text-slate-400 md:inline-block"
+                              >Crafted with <i class="ti ti-heart text-red-500"></i> by
+                              IMS</span
+                            >
+                          </footer>
+                          <!-- end Footer -->
+                        </div>
+                      </div>
+  
+  
+                </div><!--end container-->
+            </div><!--end page-wrapper-->
+        </div><!--end /div-->
+        
+
+        <!-- JAVASCRIPTS -->
+
+    <script src="assets/js/simplebar.min.js"></script>
+    <script src="assets/js/flatpickr.min.js"></script>
+    <script src="assets/js/frostui.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+        <!-- JAVASCRIPTS -->''
+        <script>
+            //User LocalStorage
+            function getUserInformation() {
+                return {
+                    user_id: localStorage.getItem('user_id'),
+                    name: localStorage.getItem('user_name') || 'Guest',
+                    user_img: localStorage.getItem('user_img') || 'uploads/users/User.png' // Default image if not set
+                };
+            }
+        
+            function displayUserInfo() {
+                const userInfo = getUserInformation();
+                console.log('User ID:', userInfo.user_id);
+                console.log('User Name:', userInfo.name);
+                console.log('User Image:', userInfo.user_img);
+        
+                // Display user image if element exists
+                const userImageElement = document.getElementById('userImage');
+                if (userImageElement) {
+                    userImageElement.src = userInfo.user_img;
+                }
+        
+                // Display user name if element exists
+                const usernameElement = document.getElementById('username');
+                if (usernameElement) {
+                    usernameElement.textContent = userInfo.name;
+                }
+            }
+        
+            document.addEventListener('DOMContentLoaded', function () {
+                displayUserInfo();
+            });
+        
+            function clearUserInformation() {
+                localStorage.removeItem('user_id');
+                localStorage.removeItem('user_name');
+                localStorage.removeItem('user_img'); // Also clear the user image
+                // Optionally, you can add a redirect here if needed
+                window.location.href = 'login.html';
+            }
+        
+            function confirmLogout() {
+                if (window.confirm("Are you sure you want to log out?")) {
+                    localStorage.clear();
+                    window.location.href = 'logout.php';
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+            const userNameElement = document.getElementById('userName');
+            const userName = localStorage.getItem('user_name') || 'Guest';
+            if (userNameElement) {
+                userNameElement.textContent = userName;
+            }
+        });
+        </script>
+    </body>
+</html>

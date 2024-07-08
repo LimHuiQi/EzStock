@@ -1,0 +1,24 @@
+Raw Input: [{"userId":"User-1","salesOrderTitle":"SO#2407040001","salesDateInput":"2024-07-04","custName":"Jackson","productDetails":["LINING-0002 ----- 1"],"grandTotal":379.05,"subtotal":399,"totalDiscount":19.950000000000003,"shippingCharge":"0.00","selectedValue":"Credit/Debit Card","salesPaid":"1","remark":"1"}]
+Decoded Data: Array
+(
+    [0] => Array
+        (
+            [userId] => User-1
+            [salesOrderTitle] => SO#2407040001
+            [salesDateInput] => 2024-07-04
+            [custName] => Jackson
+            [productDetails] => Array
+                (
+                    [0] => LINING-0002 ----- 1
+                )
+
+            [grandTotal] => 379.05
+            [subtotal] => 399
+            [totalDiscount] => 19.95
+            [shippingCharge] => 0.00
+            [selectedValue] => Credit/Debit Card
+            [salesPaid] => 1
+            [remark] => 1
+        )
+
+)

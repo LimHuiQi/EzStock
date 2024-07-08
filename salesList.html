@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth group" data-sidebar="brand" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>IMS - EzStock</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta content="Inventory Management System for Small Businesses" name="description" />
+        <meta content="" name="EzStock" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/EzStock.png" />
+
+        <!-- Css -->
+        <!-- Main Css -->
+        <link href="assets/css/flatpickr.min.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+    
+        <script src="https://kit.fontawesome.com/5e1b21a2a2.js" crossorigin="anonymous"></script>
+    
+    </head>
+    
+    <body data-layout-mode="light"  data-sidebar-size="default" data-theme-layout="vertical" class="bg-[#EEF0FC] dark:bg-gray-900">
+   <!-- leftbar-tab-menu -->
+   <div
+   class="min-h-full z-[99]  fixed inset-y-0 print:hidden bg-gradient-to-t from-[#6f3dc3] from-10% via-[#603dc3] via-40% to-[#5c3dc3] to-100% dark:bg-[#603dc3] main-sidebar duration-300 group-data-[sidebar=dark]:bg-[#603dc3] group-data-[sidebar=brand]:bg-brand group-[.dark]:group-data-[sidebar=brand]:bg-[#603dc3]">
+   <div
+       class=" text-center border-b bg-[#603dc3] border-r h-[64px] flex justify-center items-center brand-logo dark:bg-[#603dc3] dark:border-slate-700/40 group-data-[sidebar=dark]:bg-[#603dc3] group-data-[sidebar=dark]:border-slate-700/40 group-data-[sidebar=brand]:bg-brand group-[.dark]:group-data-[sidebar=brand]:bg-[#603dc3] group-data-[sidebar=brand]:border-slate-700/40">
+       <a href="index.html" class="logo">
+           <span>
+               <img src="assets/images/EzStock.png" alt="logo-small" class="logo-sm h-8 align-middle inline-block">
+           </span>
+           <span>
+               <img src="assets/images/logo.png" alt="logo-large"
+                   class="logo-lg h-[28px] logo-light hidden dark:inline-block ms-1 group-data-[sidebar=dark]:inline-block group-data-[sidebar=brand]:inline-block">
+               <img src="assets/images/EzStock.png" alt="logo-large"
+                   class="logo-lg h-[28px] logo-dark inline-block dark:hidden ms-1 group-data-[sidebar=dark]:hidden group-data-[sidebar=brand]:hidden">
+           </span>
+       </a>
+   </div>
+   <div class="border-r pb-14 h-[100vh] dark:bg-[#603dc3] dark:border-slate-700/40 group-data-[sidebar=dark]:border-slate-700/40 group-data-[sidebar=brand]:border-slate-700/40"
+       data-simplebar>
+       <div class="p-4 block">
+           <ul class="navbar-nav">
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Main</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="index.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-border-all"></i>
+                           </span>
+                           <span>Dashboard</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Products</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="product.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-box"></i>
+                           </span>
+                           <span>Product List</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="addProduct.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-square-plus"></i>
+                           </span>
+                           <span>Create Product</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="category.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-list"></i>
+                           </span>
+                           <span>Category</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="brands.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-tag"></i>
+                           </span>
+                           <span>Brands</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Sales</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="salesList.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-cart-shopping"></i>
+                           </span>
+                           <span>Sales List</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="addSales.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-cart-plus"></i>
+                           </span>
+                           <span>Create Sales</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Purchases</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="purchaseList.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-basket-shopping"></i>
+                           </span>
+                           <span>Purchase List</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="addPurchase.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-wallet"></i>
+                           </span>
+                           <span>Create Purchase</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">People</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="customer.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-user-tag"></i>
+                           </span>
+                           <span>Customer</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="supplier.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-users"></i>
+                           </span>
+                           <span>Supplier</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Report</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="salesReport.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-chart-line"></i>
+                           </span>
+                           <span>Sales Report</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="purchaseReport.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-chart-gantt"></i>
+                           </span>
+                           <span>Purchase Report</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="invoiceReport.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-chart-column"></i>
+                           </span>
+                           <span>Invioce Report</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="customerReport.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-chart-bar"></i>
+                           </span>
+                           <span>Customer Report</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="supplierReport.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-chart-area"></i>
+                           </span>
+                           <span>Supplier Report</span>
+                       </a>
+                   </div>
+               </li>
+               <li
+                   class="uppercase text-[11px]  text-primary-500 dark:text-primary-400 mt-0 leading-4 mb-2 group-data-[sidebar=dark]:text-primary-400 group-data-[sidebar=brand]:text-primary-300">
+                   <span
+                       class="text-[9px] text-slate-600 dark:text-slate-500 group-data-[sidebar=dark]:text-slate-500 group-data-[sidebar=brand]:text-slate-400">Settings</span>
+               </li>
+               <li>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="profile.html"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-user-gear"></i>
+                           </span>
+                           <span>Profile</span>
+                       </a>
+                   </div>
+                   <div id="parent-accordion" data-fc-type="accordion">
+                       <a href="javascript:void(0);"
+                           class="nav-link hover:bg-transparent hover:text-black rounded-md dark:hover:text-slate-200 flex items-center decoration-0 px-3 py-3 cursor-pointer group-data-[sidebar=dark]:hover:text-slate-200 group-data-[sidebar=brand]:hover:text-slate-200"
+                           onclick="confirmLogout()" data-fc-type="collapse" data-fc-parent="parent-accordion">
+                           <span
+                               class="w-5 h-6 text-center text-slate-800 dark:text-slate-400 me-2 group-data-[sidebar=dark]:text-slate-400 group-data-[sidebar=brand]:text-slate-400">
+                               <i class="fa-solid fa-right-from-bracket"></i>
+                           </span>
+                           <span>Logout</span>
+                       </a>
+                   </div>
+               </li>
+
+
+
+           </ul>
+          
+       </div>
+   </div>
+</div> <!-- End leftbar-tab-menu -->
+
+<!-- Topbar -->
+<nav id="topbar" class="topbar border-b  dark:border-slate-700/40  fixed inset-x-0  duration-300
+block print:hidden z-50">
+   <div
+       class="mx-0 flex max-w-full flex-wrap items-center lg:mx-auto relative top-[50%] start-[50%] transform -translate-x-1/2 -translate-y-1/2">
+       <div class="ltr:mx-2  rtl:mx-2">
+           <button id="toggle-menu-hide" class="button-menu-mobile flex rounded-full md:me-0 relative">
+               <i class="fa-solid fa-bars top-icon w-5 h-5"></i>
+           </button>
+       </div>
+       <div class="flex items-center md:w-[40%] lg:w-[30%] xl:w-[20%]">
+           <div class="relative ltr:mx-2 rtl:mx-2 self-center">
+               <button
+                   class="px-2 py-1 bg-primary-500/10 border border-transparent collapse:bg-green-100 text-primary text-sm rounded hover:bg-blue-600 hover:text-white"><i
+                       class="ti ti-plus me-1"></i> New Task</button>
+           </div>
+       </div>
+
+       <div class="order-1 ltr:ms-auto rtl:ms-0 rtl:me-auto flex items-center md:order-2">
+           <div class="ltr:me-2 ltr:md:me-4 rtl:me-0 rtl:ms-2 rtl:lg:me-0 rtl:md:ms-4 dropdown relative">
+               <button type="button" class="dropdown-toggle flex rounded-full md:me-0" aria-expanded="false"
+                   data-fc-autoclose="both" data-fc-type="dropdown">
+                   <span class="top-icon w-5 h-5">
+                       <i class="fa-solid fa-magnifying-glass"></i>
+                   </span>
+               </button>
+
+               <div class="left-auto right-0 z-50 my-1 hidden min-w-[300px]
+  list-none divide-y  divide-gray-100 rounded-md border-slate-700
+  md:border-white text-base shadow dark:divide-gray-600 bg-white
+  dark:bg-slate-800" onclick="event.stopPropagation()">
+                   <div class="relative">
+                       <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center
+      pl-3">
+                           <i class="fa-solid fa-search text-gray-400 dark:text-gray-400 z-10"></i>
+                       </div>
+                       <input type="text" id="email-adress-icon" class="block w-full rounded-lg border border-slate-200 dark:border-slate-700/60 bg-slate-200/10 p-1.5
+      pl-10 text-slate-600 dark:text-slate-400 outline-none focus:border-slate-300
+      focus:ring-slate-300 dark:bg-slate-800/20 sm:text-sm" placeholder="Search..." />
+                   </div>
+               </div>
+           </div>
+           <div class="ltr:me-2 ltr:md:me-4 rtl:me-0 rtl:ms-2 rtl:lg:me-0 rtl:md:ms-4">
+
+               <button id="toggle-theme" class="flex rounded-full md:me-0 relative">
+                   <span class="top-icon w-5 h-5 light ">
+                       <i class="fa-solid fa-moon"></i>
+                   </span>
+                   <span class="top-icon w-5 h-5 dark hidden">
+                       <i class="fa-solid fa-sun"></i>
+                   </span>
+               </button>
+           </div>
+           <div class="ltr:me-2 ltr:lg:me-4 rtl:me-0 rtl:ms-2 rtl:lg:me-0 rtl:md:ms-4 dropdown relative">
+               <button type="button" class="dropdown-toggle flex rounded-full md:me-0" id="Notifications"
+                   aria-expanded="false" data-fc-autoclose="both" data-fc-type="dropdown">
+                   <span class="top-icon w-5 h-5">
+                       <i class="fa-solid fa-bell"></i>
+                   </span>
+               </button>
+
+               <div class="left-auto right-0 z-50 my-1 hidden w-64
+  list-none divide-y h-52 divide-gray-100 rounded border border-slate-700/10
+ text-base shadow dark:divide-gray-600 bg-white
+  dark:bg-slate-800" id="navNotifications" data-simplebar>
+                   <ul class="py-1" aria-labelledby="navNotifications">
+                       <!-- Notifications -->
+                   </ul>
+               </div>
+           </div>
+           <div class="me-2  dropdown relative">
+               <button type="button"
+                   class="dropdown-toggle flex items-center rounded-full text-sm focus:bg-none focus:ring-0 dark:focus:ring-0 md:me-0"
+                   id="user-profile" aria-expanded="false" data-fc-autoclose="both" data-fc-type="dropdown">
+                   <img id="userImage" class="h-8 w-8 rounded-full" alt="user photo" />    
+                   <span class="ltr:ms-2 rtl:ms-0 rtl:me-2 hidden text-left xl:block">
+                       <div class="user-info">
+                           <span id="username" class="block font-medium text-slate-600 dark:text-gray-300"></span>
+                       </div>
+                       <span class="-mt-0.5 block text-xs text-slate-500 dark:text-gray-400">Admin</span>
+                   </span>
+               </button>
+
+
+               <div class="left-auto right-0 z-50 my-1 hidden list-none
+  divide-y divide-gray-100 rounded border border-slate-700/10
+  text-base shadow dark:divide-gray-600 bg-white dark:bg-slate-800 w-40" id="navUserdata">
+
+                   <ul class="py-1" aria-labelledby="navUserdata">
+                       <li>
+                           <a href="profile.html" class="flex items-center py-2 px-3 text-sm text-gray-700 hover:bg-gray-50
+        dark:text-gray-200 dark:hover:bg-gray-900/20
+        dark:hover:text-white">
+                               <span class="w-4 h-5 inline-block text-slate-800 dark:text-slate-400 me-2">
+                                   <i class="fa-solid fa-circle-user"></i>
+                               </span>
+                               Profile</a>
+                       </li>
+                       <li>
+                           <a href="settings.html" class="flex items-center py-2 px-3 text-sm text-gray-700 hover:bg-gray-50
+        dark:text-gray-200 dark:hover:bg-gray-900/20
+        dark:hover:text-white">
+                               <span class="w-4 h-5 inline-block text-slate-800 dark:text-slate-400 me-2">
+                                   <i class="fa-solid fa-gear"></i>
+                               </span>
+                               Settings</a>
+                       </li>
+                       <li>
+                           <a href="#" class="flex items-center py-2 px-3 text-sm text-gray-700 hover:bg-gray-50
+        dark:text-gray-200 dark:hover:bg-gray-900/20
+        dark:hover:text-white">
+                               <span class="w-4 h-5 inline-block text-slate-800 dark:text-slate-400 me-2">
+                                   <i class="fa-solid fa-dollar-sign"></i>
+                               </span>
+                               Earnings</a>
+                       </li>
+                       <li>
+                           <a href="login.html" class="flex items-center py-2 px-3 text-sm text-red-500 hover:bg-gray-50 hover:text-red-600
+        dark:text-red-500 dark:hover:bg-gray-900/20
+        dark:hover:text-red-500">
+                               <span class="w-4 h-5 inline-block text-red-500 dark:text-red-500 me-2">
+                                   <i class="fa-solid fa-right-from-bracket"></i>
+                               </span>
+                               Sign out</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+</nav><!--End Topbar -->
+
+        <div class="ltr:flex flex-1 rtl:flex-row-reverse">
+            <div class="page-wrapper relative ltr:ms-auto rtl:me-auto rtl:ms-0 w-[calc(100%-260px)] px-4 pt-[64px] duration-300">
+                <div class="xl:w-full">        
+                    <div class="flex flex-wrap">
+                        <div class="flex items-center py-4 w-full">
+                            <div class="w-full">                    
+                                <div class="">
+                                    <div class="flex flex-wrap justify-between">
+                                        <div class="items-center ">
+                                            <h1 class="font-medium text-3xl block dark:text-slate-100">Sales</h1>
+                                            <ol class="list-reset flex text-sm">
+                                                <li><a href="#" class="text-gray-500 dark:text-slate-400">IMS</a></li>
+                                                <li><span class="text-gray-500 dark:text-slate-400 mx-2">/</span></li>
+                                                <li class="text-gray-500 dark:text-slate-400">EzStock</li>
+                                                <li><span class="text-gray-500 dark:text-slate-400 mx-2">/</span></li>
+                                                <li class="text-primary-500 hover:text-primary-600 dark:text-primary-400">Sales List</li>
+                                            </ol>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div class="today-date leading-5 mt-2 lg:mt-0 form-input w-auto rounded-md border inline-block border-primary-500/60 dark:border-primary-500/60 text-primary-500 bg-transparent px-3 py-1 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-primary-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700">
+                                                <input type="text" class="dash_date border-0 focus:border-0 focus:outline-none" readonly  required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end container-->
+            
+                <div class="xl:w-full  min-h-[calc(100vh-138px)] relative pb-14"> 
+                    <div class="grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12 xl:grid-cols-12 gap-4">
+                        <div class="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-12">
+                            <div class="w-full relative mb-4">  
+                                <div class="flex-auto p-0 md:p-4">
+                                    <div class="mb-4 border-b border-gray-200 dark:border-slate-700" data-fc-type="tab">
+                                        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" aria-label="Tabs">
+                                            <li class="me-2" role="presentation">
+                                                <button class="inline-block p-4 rounded-t-lg border-b-2 active " id="all-tab" data-fc-target="#all" type="button" role="tab" aria-controls="all" aria-selected="false">All <span class="text-slate-400">(5)</span></button>
+                                            </li>
+                                            <li class="me-2" role="presentation">
+                                                <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="panding-tab" data-fc-target="#panding" type="button" role="tab" aria-controls="panding" aria-selected="false">Pending <span class="text-slate-400">()</span></button>
+                                            </li>
+                                            <li class="" role="presentation">
+                                                <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="returns-tab" data-fc-target="#returns" type="button" role="tab" aria-controls="returns" aria-selected="false">Returns <span class="text-slate-400">()</span></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-wrap gap-4 mb-3">
+                                        <div class="mb-2 w-44">                                           
+                                            <select id="Category" class="w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-2 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700">
+                                                <option  class="dark:text-slate-700">All Category</option>
+                                                <!-- <option  class="dark:text-slate-700">Electronics</option>
+                                                <option  class="dark:text-slate-700">Furniture</option>
+                                                <option  class="dark:text-slate-700">Footwear</option>
+                                                <option  class="dark:text-slate-700">Clothes</option> -->
+                                            </select> 
+                                        </div>
+                                        <div class="mb-2 w-36">
+                                            <select id="Payment" class="w-full rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-2 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700">
+                                                <option  class="dark:text-slate-700">Payment</option>
+                                                <!-- <option  class="dark:text-slate-700">Online</option>
+                                                <option  class="dark:text-slate-700">Check</option>
+                                                <option  class="dark:text-slate-700">Cash</option> -->
+                                            </select> 
+                                        </div>
+                                        <div class="ms-auto">
+                                            <form>
+                                                <div class="relative">
+                                                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                                        <i data-lucide="search" class="z-[1] w-5 h-5 stroke-slate-400"></i>
+                                                    </div>
+                                                    <input type="search" id="productSearch" class="form-input w-52 rounded-md mt-1 border border-slate-300/60 dark:border-slate-700 dark:text-slate-300 bg-transparent px-3 py-2 focus:outline-none focus:ring-0 placeholder:text-slate-400/70 placeholder:font-normal placeholder:text-sm hover:border-slate-400 focus:border-primary-500 dark:focus:border-primary-500  dark:hover:border-slate-700 pl-10 p-2.5" placeholder="search">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div>
+                                            <a href="addSales.html" class="inline-block focus:outline-none bg-brand-500 mt-1 text-white hover:bg-brand-600 hover:text-white text-md font-medium py-2 px-4 rounded">
+                                                Add Sales
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                    <div id="myTabContent">
+                                        <div class="active  p-4 bg-gray-50 rounded-lg dark:bg-gray-700/20" id="all" role="tabpanel" aria-labelledby="all-tab">
+                                            <div class="grid grid-cols-1 p-0 md:p-4">
+                                                <div class="sm:-mx-6 lg:-mx-8">
+                                                    <div class="relative overflow-x-auto block w-full sm:px-6 lg:px-8">
+                                                        <table class="w-full">
+                                                            <thead class="bg-gray-50 dark:bg-gray-600/20">
+                                                                <tr>
+                                                                    <th scope="col" class="p-3">
+                                                                        <label class="custom-label">
+                                                                            <div class="bg-white dark:bg-slate-600/40 border border-slate-200 dark:border-slate-600 rounded w-5 h-5  inline-block leading-5 text-center -mb-[6px]">
+                                                                            <input type="checkbox" class="hidden" >
+                                                                            <i class="fa-solid fa-check hidden text-xs text-brand-500 dark:text-slate-200"></i>
+                                                                            </div>
+                                                                        </label>
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Sales ID
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Customer
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Total
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Date
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Type
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Status
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Action
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!-- 1 -->
+                                                                <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
+                                                                    <td class="w-4 p-4">
+                                                                        <label class="custom-label">
+                                                                            <div class="bg-white dark:bg-slate-600/40 border border-slate-200 dark:border-slate-600 rounded w-5 h-5  inline-block leading-5 text-center -mb-[6px]">
+                                                                            <input type="checkbox" class="hidden" >
+                                                                            <i class="fa-solid fa-check hidden text-xs text-brand-500 dark:text-slate-200"></i>
+                                                                            </div>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        <a href="admin-order-details.html" class="text-brand-500 underline">SO#2407260001</a>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
+                                                                        <div class="flex items-center">
+                                                                            <img src="assets/images/users/avatar-2.png" alt="" class="me-2 h-8 inline-block">
+                                                                            <div class="self-center">                                                                        
+                                                                                <h5 class="text-sm font-semibold text-slate-700 dark:text-gray-400">Jackson Yee</h5>
+                                                                                <span class="block  font-medium text-slate-500">Malaysia</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        RM 540.00
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        20 Jun 2023
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        Cash
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        <span class="bg-green-600/5 text-green-600 text-[11px] font-medium px-2.5 py-0.5 rounded h-5">Success</span>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        <a href="#"><i class="fa-solid fa-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
+                                                                        <a href="#"><i class="fa-solid fa-trash-can text-lg text-red-500 dark:text-red-400"></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                                <!-- 1 -->
+                                                                <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
+                                                                    <td class="w-4 p-4">
+                                                                        <label class="custom-label">
+                                                                            <div class="bg-white dark:bg-slate-600/40 border border-slate-200 dark:border-slate-600 rounded w-5 h-5  inline-block leading-5 text-center -mb-[6px]">
+                                                                            <input type="checkbox" class="hidden" >
+                                                                            <i class="fa-solid fa-check hidden text-xs text-brand-500 dark:text-slate-200"></i>
+                                                                            </div>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        <a href="admin-order-details.html" class="text-brand-500 underline">SO#2407260002</a>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
+                                                                        <div class="flex items-center">
+                                                                            <img src="assets/images/users/avatar-2.png" alt="" class="me-2 h-8 inline-block">
+                                                                            <div class="self-center">                                                                        
+                                                                                <h5 class="text-sm font-semibold text-slate-700 dark:text-gray-400">Shan</h5>
+                                                                                <span class="block  font-medium text-slate-500">Malaysia</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        RM 880.00
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        26 July 2023
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        Online Banking
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        <span class="bg-green-600/5 text-yellow-600 text-[11px] font-medium px-2.5 py-0.5 rounded h-5">Pending</span>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        <a href="#"><i class="fa-solid fa-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
+                                                                        <a href="#"><i class="fa-solid fa-trash-can text-lg text-red-500 dark:text-red-400"></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div><!--end div-->
+                                                </div><!--end div-->
+                                            </div><!--end grid-->
+                                            <!-- <div class="flex justify-between mt-4">
+                                                <div class="self-center">
+                                                    <p class="dark:text-slate-400">Showing 1 of 1</p>
+                                                </div>
+                                                <div class="self-center">
+                                                    <ul class="inline-flex items-center -space-x-px">
+                                                        <li>
+                                                            <a href="#" class=" py-2 px-3 ms-0 leading-tight text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                                                                <i class="fa-solid fa-chevron-left"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#" class="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#" aria-current="page" class="z-10 py-2 px-3 leading-tight text-brand-600 bg-brand-50 border border-brand-300 hover:bg-brand-100 hover:text-brand-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">2</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">3</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#" class=" py-2 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="panding" role="tabpanel" aria-labelledby="panding-tab">
+                                            <div class="grid grid-cols-1 p-0 md:p-4">
+                                                <div class="sm:-mx-6 lg:-mx-8">
+                                                    <div class="relative overflow-x-auto block w-full sm:px-6 lg:px-8">
+                                                        <table class="w-full">
+                                                            <thead class="bg-gray-50 dark:bg-gray-600/20">
+                                                                <tr>
+                                                                    <th scope="col" class="p-3">
+                                                                        <label class="custom-label">
+                                                                            <div class="bg-white dark:bg-slate-600/40 border border-slate-200 dark:border-slate-600 rounded w-5 h-5  inline-block leading-5 text-center -mb-[6px]">
+                                                                            <input type="checkbox" class="hidden" >
+                                                                            <i class="fa-solid fa-check hidden text-xs text-brand-500 dark:text-slate-200"></i>
+                                                                            </div>
+                                                                        </label>
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Order ID
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Customer
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Total
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Date
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Type
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Status
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Action
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div><!--end div-->
+                                                </div><!--end div-->
+                                            </div><!--end grid-->
+                                            <!-- <div class="flex justify-between mt-4">
+                                                <div class="self-center">
+                                                    <p class="dark:text-slate-400">Showing 1 - 20 of 1,524</p>
+                                                </div>
+                                                <div class="self-center">
+                                                    <ul class="inline-flex items-center -space-x-px">
+                                                        <li>
+                                                            <a href="#" class=" py-2 px-3 ms-0 leading-tight text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                                                                <i class="fa-solid fa-chevron-left"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#" class="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#" aria-current="page" class="z-10 py-2 px-3 leading-tight text-brand-600 bg-brand-50 border border-brand-300 hover:bg-brand-100 hover:text-brand-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">2</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">3</a>
+                                                        </li>
+                                                        <li>
+                                                        <a href="#" class=" py-2 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-900 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                                                            <i class="fa-solid fa-chevron-right"></i>
+                                                        </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="returns" role="tabpanel" aria-labelledby="returns-tab">
+                                            <div class="grid grid-cols-1 p-0 md:p-4">
+                                                <div class="sm:-mx-6 lg:-mx-8">
+                                                    <div class="relative overflow-x-auto block w-full sm:px-6 lg:px-8">
+                                                        <table class="w-full">
+                                                            <thead class="bg-gray-50 dark:bg-gray-600/20">
+                                                                <tr>
+                                                                    <th scope="col" class="p-3">
+                                                                        <label class="custom-label">
+                                                                            <div class="bg-white dark:bg-slate-600/40 border border-slate-200 dark:border-slate-600 rounded w-5 h-5  inline-block leading-5 text-center -mb-[6px]">
+                                                                            <input type="checkbox" class="hidden" >
+                                                                            <i class="fa-solid fa-check hidden text-xs text-brand-500 dark:text-slate-200"></i>
+                                                                            </div>
+                                                                        </label>
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Order ID
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Customer
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Total
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Date
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Type
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Status
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Action
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                
+                                                            </tbody>
+                                                        </table>
+                                                    </div><!--end div-->
+                                                </div><!--end div-->
+                                            </div><!--end grid-->
+                                        </div>
+                                        <div class="hidden p-4 bg-gray-50 rounded-lg dark:bg-gray-800" id="discount" role="tabpanel" aria-labelledby="discount-tab">
+                                            <div class="grid grid-cols-1 p-0 md:p-4">
+                                                <div class="sm:-mx-6 lg:-mx-8">
+                                                    <div class="relative overflow-x-auto block w-full sm:px-6 lg:px-8">
+                                                        <table class="w-full">
+                                                            <thead class="bg-gray-50 dark:bg-gray-600/20">
+                                                                <tr>
+                                                                    <th scope="col" class="p-3">
+                                                                        <label class="custom-label">
+                                                                            <div class="bg-white dark:bg-slate-600/40 border border-slate-200 dark:border-slate-600 rounded w-5 h-5  inline-block leading-5 text-center -mb-[6px]">
+                                                                            <input type="checkbox" class="hidden" >
+                                                                            <i class="fa-solid fa-check hidden text-xs text-brand-500 dark:text-slate-200"></i>
+                                                                            </div>
+                                                                        </label>
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Product & Title
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Categories
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Stock status
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Attributes
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Price
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Date
+                                                                    </th>
+                                                                    <th scope="col" class="p-3 text-xs font-medium tracking-wider text-left text-gray-700 dark:text-gray-400 uppercase">
+                                                                        Action
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!--1-->
+                                                                <tr class="bg-white border-b border-dashed dark:bg-gray-900 dark:border-gray-700/40">
+                                                                    <td class="w-4 p-4">
+                                                                        <label class="custom-label">
+                                                                            <div class="bg-white dark:bg-slate-600/40 border border-slate-200 dark:border-slate-600 rounded w-5 h-5  inline-block leading-5 text-center -mb-[6px]">
+                                                                            <input type="checkbox" class="hidden" >
+                                                                            <i class="fa-solid fa-check hidden text-xs text-brand-500 dark:text-slate-200"></i>
+                                                                            </div>
+                                                                        </label>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
+                                                                        <div class="flex items-center">
+                                                                            <img src="assets/images/products/pro-5.png" alt="" class="me-2 h-8 inline-block">
+                                                                            <div class="self-center">                                                                        
+                                                                                <h5 class="text-sm font-semibold text-slate-700 dark:text-gray-400">Watch 3 Active </h5>
+                                                                                <span class="block  font-medium text-slate-500">Latest Model 2023</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        <a href="#" class="text-brand-500 underline">Fashion</a>,
+                                                                        <a href="#" class="text-brand-500 underline">Lifestayle</a>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        <span class="bg-green-600/5 text-green-600 text-[11px] font-medium px-2.5 py-0.5 rounded h-5">In stock</span>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        <div>color : 
+                                                                            <span class="ms-2">
+                                                                                <i class="icofont-brand-mts text-orange-500"></i> 
+                                                                                <i class="icofont-brand-mts text-purple-500"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div>Size : 
+                                                                            <span class="ms-2">S</span>
+                                                                            <span class="mx-1">M</span>
+                                                                            <span class="mx-1">L</span>
+                                                                            <span class="mx-1">XL</span>
+                                                                            <span class="mx-1">XXL</span>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="p-3 font-semibold text-lg text-gray-800 whitespace-nowrap dark:text-gray-400">
+                                                                        $219 <del class="text-slate-500 font-normal">$299</del>
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                    25 Nov 2023
+                                                                    </td>
+                                                                    <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                                                        <a href="#"><i class="fa-solid fa-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
+                                                                        <a href="#"><i class="fa-solid fa-trash-can text-lg text-red-500 dark:text-red-400"></i></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div><!--end div-->
+                                                </div><!--end div-->
+                                            </div><!--end grid-->
+                                        </div>
+                                    </div>
+                                </div><!--end card-body--> 
+                            </div><!--end card-->                                  
+                        </div><!--end col-->                        
+                    </div> <!--end grid-->                                        
+                    <!-- footer -->
+                    <div class="absolute bottom-0 -left-4 -right-4 block print:hidden border-t p-4 h-[52px] dark:border-slate-700/40">
+                        <div class="container">
+                          <!-- Footer Start -->
+                          <footer
+                            class="footer bg-transparent  text-center  font-medium text-slate-600 dark:text-slate-400 md:text-left "
+                          >
+                            &copy;
+                            <script>
+                              var year = new Date();document.write(year.getFullYear());
+                            </script>
+                            EzStock
+                            <span class="float-right hidden text-slate-600 dark:text-slate-400 md:inline-block"
+                              >Crafted with <i class="ti ti-heart text-red-500"></i> by
+                              IMS</span
+                            >
+                          </footer>
+                          <!-- end Footer -->
+                        </div>
+                      </div>
+  
+  
+                </div><!--end container-->
+            </div><!--end page-wrapper-->
+        </div><!--end /div-->
+
+        <!-- JAVASCRIPTS -->
+        <!-- <div class="menu-overlay"></div> -->
+        <script src="assets/js/simplebar.min.js"></script>
+        <script src="assets/js/flatpickr.min.js"></script>
+        <script src="assets/js/frostui.js"></script>
+        <script src="https://kit.fontawesome.com/5e1b21a2a2.js" crossorigin="anonymous"></script>
+    
+        <script src="assets/js/app.js"></script>
+    
+        <script>
+            function loadUser() {
+            fetch('loadUser.php')
+                .then(response => response.json())
+                .then(data => {
+                    console.log('User data:', data);
+                    // You can now use the user data as needed in your JavaScript code
+                })
+                .catch(error => console.error('Error loading user data:', error));
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Function to fetch user info using AJAX
+            function loadUserInfo() {
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === XMLHttpRequest.DONE) {
+                        if (xhr.status === 200) {
+                            var userInfo = JSON.parse(xhr.responseText);
+                            var usernameSpan = document.getElementById("username");
+                            if (userInfo.name) {
+                                usernameSpan.textContent = userInfo.name;
+                            }
+                        } else {
+                            console.error('Error fetching user info:', xhr.statusText);
+                        }
+                    }
+                };
+                xhr.open("GET", "loadUser.php", true);
+                xhr.send();
+            }
+
+            // Call the function to load user info when the document is loaded
+            loadUserInfo();
+        });
+        </script>
+        <!-- JAVASCRIPTS -->
+        <script>
+            //User LocalStorage
+            function getUserInformation() {
+                return {
+                    user_id: localStorage.getItem('user_id'),
+                    name: localStorage.getItem('user_name') || 'Guest',
+                    user_img: localStorage.getItem('user_img') || 'uploads/users/User.png' // Default image if not set
+                };
+            }
+        
+            function displayUserInfo() {
+                const userInfo = getUserInformation();
+                console.log('User ID:', userInfo.user_id);
+                console.log('User Name:', userInfo.name);
+                console.log('User Image:', userInfo.user_img);
+        
+                // Display user image if element exists
+                const userImageElement = document.getElementById('userImage');
+                if (userImageElement) {
+                    userImageElement.src = userInfo.user_img;
+                }
+        
+                // Display user name if element exists
+                const usernameElement = document.getElementById('username');
+                if (usernameElement) {
+                    usernameElement.textContent = userInfo.name;
+                }
+            }
+        
+            document.addEventListener('DOMContentLoaded', function () {
+                displayUserInfo();
+            });
+        
+            function clearUserInformation() {
+                localStorage.removeItem('user_id');
+                localStorage.removeItem('user_name');
+                localStorage.removeItem('user_img'); // Also clear the user image
+                // Optionally, you can add a redirect here if needed
+                window.location.href = 'login.html';
+            }
+        
+            function confirmLogout() {
+                if (window.confirm("Are you sure you want to log out?")) {
+                    localStorage.clear();
+                    window.location.href = 'logout.php';
+                }
+            }
+        </script>
+    </body>
+</html>
